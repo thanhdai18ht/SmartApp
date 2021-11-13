@@ -18,6 +18,11 @@ export const routes: Routes = [
         path: '', redirectTo: 'dashboard/analytics', pathMatch: 'full'
       },
       {
+        path: 'khach-hang',
+        loadChildren: 'app/danh-muc-khach-hang/khach-hang.module#KhachHangModule'
+      },
+
+      {
         path: 'dashboard',
         loadChildren: 'app/+dashboard/dashboard.module#DashboardModule',
         data: {pageTitle: 'Dashboard'}

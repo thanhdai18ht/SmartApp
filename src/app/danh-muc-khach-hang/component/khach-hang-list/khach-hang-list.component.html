@@ -1,0 +1,37 @@
+
+        <div sa-widget [editbutton]="false" color="blueDark">
+          <header>
+            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+            <h2>Normal Table</h2>
+          </header>
+          <div>
+            <div class="widget-body">
+              <p>Adds borders to any table row within <code>&lt;table&gt;</code> by adding the
+                <code>.table-bordered</code>
+                with the base class</p>
+
+              <div class="table-responsive">
+
+                <table class="table table-bordered">
+                  <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>name</th>
+                   
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr *ngFor="let value of _data" >
+                    <td>{{value.Id}}</td>
+                    <td>{{value.Name}}</td>
+                  </tr>
+                  
+                  </tbody>
+                </table>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
